@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>makeappointmentpage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f65f1e11-9635-4f61-b7ff-509511598c9d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f34d9960-3c3f-4606-8f57-e0ea15c5b343</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>89f890a9-dbe3-4a5e-a39e-b9934c198079</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'24/01/2023'</defaultValue>
+      <description></description>
+      <id>f34d9960-3c3f-4606-8f57-e0ea15c5b343</id>
+      <masked>false</masked>
+      <name>date</name>
+   </variable>
+   <variable>
+      <defaultValue>'bcsdba ujxbwqyhibscxiwqqbsxidwsbdxiywsv cviydbiyqscb dyiqcbidyabqciudxuabv ai'</defaultValue>
+      <description></description>
+      <id>89f890a9-dbe3-4a5e-a39e-b9934c198079</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+</TestCaseEntity>

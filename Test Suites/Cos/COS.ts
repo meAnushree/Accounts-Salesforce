@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>COS</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>286518af-db51-49d7-ac03-34ca31cb023c</testSuiteGuid>
+   <testCaseLink>
+      <guid>faa592ac-d33d-4211-9264-cd39db3539c0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Cos/TC-01_LoginPage</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>94abf716-4d37-485a-ae5d-ac0ef8289fce</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Cos/LogInDetails</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>94abf716-4d37-485a-ae5d-ac0ef8289fce</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Url</value>
+         <variableId>4b4c1dea-4731-45d5-8541-693fc1ff9d3c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>94abf716-4d37-485a-ae5d-ac0ef8289fce</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
+         <variableId>fa1f0c71-f261-496c-9ec5-61cc65c693b4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>94abf716-4d37-485a-ae5d-ac0ef8289fce</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>857dd772-4ad0-4d46-a59e-7e066c8855b5</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ee71c5b4-7d34-4ac8-8d88-dbe92d08b21c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Cos/TC-02_HomePage</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cc3b4d9d-98c6-4fae-bfe5-f01436ce0624</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dbd880a5-c206-4f7c-9c35-6d37fa10140c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Cos/TC-03_verifyEveryPage</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>03f4567e-9e43-4898-856b-bb994fcd63ad</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

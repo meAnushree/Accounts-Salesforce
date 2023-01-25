@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-02_HomePage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06c96606-059c-4794-99d9-7c8cded4f50c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cc3b4d9d-98c6-4fae-bfe5-f01436ce0624</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'test'</defaultValue>
+      <description></description>
+      <id>cc3b4d9d-98c6-4fae-bfe5-f01436ce0624</id>
+      <masked>false</masked>
+      <name>search</name>
+   </variable>
+</TestCaseEntity>

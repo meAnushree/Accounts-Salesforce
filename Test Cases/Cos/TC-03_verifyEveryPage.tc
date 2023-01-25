@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-03_verifyEveryPage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c526b910-d708-492e-bf2e-1cc2e28ba311</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>03f4567e-9e43-4898-856b-bb994fcd63ad</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'gr?y'</defaultValue>
+      <description></description>
+      <id>03f4567e-9e43-4898-856b-bb994fcd63ad</id>
+      <masked>false</masked>
+      <name>search</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-01_LogInPage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2e3bab90-604f-494c-91a5-8c952c42c486</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>5056c5d9-79aa-4451-9c70-77d2118ce8ac</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/LogInDetails</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>5056c5d9-79aa-4451-9c70-77d2118ce8ac</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Url</value>
+      <variableId>e69d4349-4a3b-4154-9d6a-12cdb5ed6c2b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5056c5d9-79aa-4451-9c70-77d2118ce8ac</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Username</value>
+      <variableId>0a705275-fb16-425c-b534-1dd11d74ff3f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5056c5d9-79aa-4451-9c70-77d2118ce8ac</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Password</value>
+      <variableId>dca184b1-31ac-461b-836c-94e7a96ddc42</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'https://cadence.oktapreview.com/'</defaultValue>
+      <description></description>
+      <id>e69d4349-4a3b-4154-9d6a-12cdb5ed6c2b</id>
+      <masked>false</masked>
+      <name>Url</name>
+   </variable>
+   <variable>
+      <defaultValue>'internalcossupportadmin@cadence.com'</defaultValue>
+      <description></description>
+      <id>0a705275-fb16-425c-b534-1dd11d74ff3f</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cdns1234'</defaultValue>
+      <description></description>
+      <id>dca184b1-31ac-461b-836c-94e7a96ddc42</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>

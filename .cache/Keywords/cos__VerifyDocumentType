@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "D9EAA8005B4E946F9D90CE6BD9807594",
+  "keywordClasses": [
+    {
+      "name": "cos.VerifyDocumentType",
+      "keywordMethods": [
+        {
+          "name": "verify",
+          "parameters": [
+            {
+              "name": "Modus",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

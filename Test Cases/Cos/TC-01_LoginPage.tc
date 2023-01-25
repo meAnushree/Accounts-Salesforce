@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-01_LoginPage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3c5818f9-e9e2-4066-aaca-814bf5fd0c6f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4b4c1dea-4731-45d5-8541-693fc1ff9d3c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fa1f0c71-f261-496c-9ec5-61cc65c693b4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>857dd772-4ad0-4d46-a59e-7e066c8855b5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'https://cadence--hfx.sandbox.my.salesforce-sites.com/UnifiedSSO/CadenceApplicationLoginScreen'</defaultValue>
+      <description></description>
+      <id>4b4c1dea-4731-45d5-8541-693fc1ff9d3c</id>
+      <masked>false</masked>
+      <name>Url</name>
+   </variable>
+   <variable>
+      <defaultValue>'auto_allhostids@cssotest.com'</defaultValue>
+      <description></description>
+      <id>fa1f0c71-f261-496c-9ec5-61cc65c693b4</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cadence1'</defaultValue>
+      <description></description>
+      <id>857dd772-4ad0-4d46-a59e-7e066c8855b5</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>
