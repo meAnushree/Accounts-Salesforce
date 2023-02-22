@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "628CAD01742A3F9BA32C632BA01FBE99",
+  "keywordClasses": [
+    {
+      "name": "sfdc.AccountPage",
+      "keywordMethods": [
+        {
+          "name": "accPage",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

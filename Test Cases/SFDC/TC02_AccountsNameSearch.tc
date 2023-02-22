@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_AccountsNameSearch</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9fdb4165-2184-47ed-b6cb-4d7c3a69e90a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6ea22572-3f4b-43f0-983f-89c86924739e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6febce38-fcca-47bc-afc3-e1dbfcb43f1c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>813b7265-d4af-4316-8472-33762d690f0c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value></value>
+      <variableId>4c702547-ebe2-4baf-a61d-624da1e10f00</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Search using the Account Name plus partial address(Street, City, Country name) to refine matching results'</defaultValue>
+      <description></description>
+      <id>6ea22572-3f4b-43f0-983f-89c86924739e</id>
+      <masked>false</masked>
+      <name>accountPageMsg</name>
+   </variable>
+   <variable>
+      <defaultValue>'Bruce'</defaultValue>
+      <description></description>
+      <id>6febce38-fcca-47bc-afc3-e1dbfcb43f1c</id>
+      <masked>false</masked>
+      <name>searchAcName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Bruce &amp; Dans'</defaultValue>
+      <description></description>
+      <id>813b7265-d4af-4316-8472-33762d690f0c</id>
+      <masked>false</masked>
+      <name>searchAcName2</name>
+   </variable>
+   <variable>
+      <defaultValue>'abcdefgh'</defaultValue>
+      <description></description>
+      <id>4c702547-ebe2-4baf-a61d-624da1e10f00</id>
+      <masked>false</masked>
+      <name>garbageValue</name>
+   </variable>
+</TestCaseEntity>

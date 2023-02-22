@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "F16DDBB7A800FA7712E969498EB53C8F",
+  "keywordClasses": [
+    {
+      "name": "sfdc.Profile",
+      "keywordMethods": [
+        {
+          "name": "steps",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-01__Impersonation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba7b095d-4934-4566-adc5-5b42111b59eb</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>0fc3d873-f465-42e8-8e20-e353cbabebbc</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/WriteMEUData (1)</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a57849ec-bfa3-4129-95dd-f6bea476683c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>0fc3d873-f465-42e8-8e20-e353cbabebbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Profile</value>
+      <variableId>7d29c952-3f7a-4295-9831-a7c2b05be814</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'//div[@class=&quot;x-grid3-cell-inner x-grid3-col-ProfileName&quot;]'</defaultValue>
+      <description></description>
+      <id>a57849ec-bfa3-4129-95dd-f6bea476683c</id>
+      <masked>false</masked>
+      <name>profile_name</name>
+   </variable>
+   <variable>
+      <defaultValue>['2_1 - Inside Sales', '3_2 - Order Fulfillment - User', '5_2_Support Administrator', '6.1 - Marketing Administrator', 'CDNReadOnly']</defaultValue>
+      <description></description>
+      <id>7d29c952-3f7a-4295-9831-a7c2b05be814</id>
+      <masked>false</masked>
+      <name>profile_list</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-02__VerifyMEU</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>05f3df98-90b8-4fe8-bd91-ff71794813ac</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>94faa3b6-27bf-4248-8241-99877a6a6e68</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'TESTING__1234__P'</defaultValue>
+      <description></description>
+      <id>94faa3b6-27bf-4248-8241-99877a6a6e68</id>
+      <masked>false</masked>
+      <name>Search</name>
+   </variable>
+</TestCaseEntity>
