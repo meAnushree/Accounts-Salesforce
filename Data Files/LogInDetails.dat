@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>e5782fb4-01b4-40e5-82b6-efa2c0bc12ae</dataFileGUID>
-   <dataSourceUrl>D:\CosData.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/CosData.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Sheet1</sheetName>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[contains(@class,'dataRow even first')]//div[contains(@class,'peopleInfoContent')]//a</value>
+         <value>//div[@class='peopleInfoContent']//a[text()='Internal COSDataSteward']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@aria-label='launch app Salesforce.com - HFX']//article[@class='chiclet--article']</value>
+         <value>//a[@aria-label='launch app Salesforce.com - HFX']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
