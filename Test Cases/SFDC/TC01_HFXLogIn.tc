@@ -66,7 +66,7 @@
       <name>password</name>
    </variable>
    <variable>
-      <defaultValue>'//section[contains(@class,\'chiclet-grid section-appear-done section-enter-done\')]'</defaultValue>
+      <defaultValue>'//a[@aria-label=&quot;launch app Salesforce.com - {site_name}&quot;]'</defaultValue>
       <description></description>
       <id>2b50cb6d-3223-44c9-8a95-ca5b7777a173</id>
       <masked>false</masked>
@@ -77,6 +77,6 @@
       <description></description>
       <id>de35254b-d2e6-4469-962f-7a75188406f9</id>
       <masked>false</masked>
-      <name>webSite</name>
+      <name>environment</name>
    </variable>
 </TestCaseEntity>

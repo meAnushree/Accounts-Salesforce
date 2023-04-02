@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC14, TC47</description>
+   <name>TC04_ChangeAccountName</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89a977c4-f5df-493b-9363-f5f100709d11</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>63394cbd-8906-410f-8681-0f74dfee1d54</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d862f87c-a2cd-4701-b586-c6fb1af883d1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b13c3bf6-1a43-40a0-badf-52437c2360c6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>63394cbd-8906-410f-8681-0f74dfee1d54</id>
+      <masked>false</masked>
+      <name>changeAccountName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d862f87c-a2cd-4701-b586-c6fb1af883d1</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b13c3bf6-1a43-40a0-badf-52437c2360c6</id>
+      <masked>false</masked>
+      <name>profile</name>
+   </variable>
+</TestCaseEntity>

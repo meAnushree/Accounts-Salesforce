@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC12_EditOppotunityAndAccounts</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>88f4786e-6a26-43b8-b008-56f86bd3432d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f0b0b9f5-e891-41a9-8bcd-469a9bc35b3e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60087941-1093-4f2b-a8e8-257c3634cada</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3b0d9084-aa77-4918-841e-249b2c8a6cf5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Testing'</defaultValue>
+      <description></description>
+      <id>f0b0b9f5-e891-41a9-8bcd-469a9bc35b3e</id>
+      <masked>false</masked>
+      <name>pAcName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>60087941-1093-4f2b-a8e8-257c3634cada</id>
+      <masked>false</masked>
+      <name>cAcName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Canada'</defaultValue>
+      <description></description>
+      <id>3b0d9084-aa77-4918-841e-249b2c8a6cf5</id>
+      <masked>false</masked>
+      <name>country</name>
+   </variable>
+</TestCaseEntity>

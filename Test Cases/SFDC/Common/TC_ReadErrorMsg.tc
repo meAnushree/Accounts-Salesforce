@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_ReadErrorMsg</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5d9d7203-92ca-4918-8325-3c31a1f3c6de</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>82b7ba26-3e45-49ee-928a-90b3b1a437ea</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>82b7ba26-3e45-49ee-928a-90b3b1a437ea</id>
+      <masked>false</masked>
+      <name>error</name>
+   </variable>
+</TestCaseEntity>

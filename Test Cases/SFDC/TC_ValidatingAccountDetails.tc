@@ -9,12 +9,6 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3e4fa1e1-4685-4602-8936-b1675ad6c6da</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>0f3503d7-50e2-4303-9fc4-e24eff7725a4</variableId>
    </variableLinks>
    <variableLinks>
@@ -47,13 +41,6 @@
       <value></value>
       <variableId>fb27ae88-c653-4f70-9c30-da5bb8b3f867</variableId>
    </variableLinks>
-   <variable>
-      <defaultValue>'https://cadence--hfx.sandbox.my.salesforce.com/_ui/common/data/LookupPage?lkfm=editPage&amp;lknm=CF00Nd00000056FdB&amp;lktp=a0H&amp;lksrch=100'</defaultValue>
-      <description></description>
-      <id>3e4fa1e1-4685-4602-8936-b1675ad6c6da</id>
-      <masked>false</masked>
-      <name>Url</name>
-   </variable>
    <variable>
       <defaultValue>'Bruse Test'</defaultValue>
       <description></description>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC80, TC86.01</description>
+   <name>TC08_UpdateScreeningStatus</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bac04972-dbdd-4d1a-9c0d-94f713829acc</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>a6d80a96-e0ee-4057-bdfc-0ade305fe61c</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/SFDC/Profiles</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>a6d80a96-e0ee-4057-bdfc-0ade305fe61c</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Export Screening Status</value>
+      <variableId>0f583c52-567d-4b22-8794-6e2667fbc5e7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0f583c52-567d-4b22-8794-6e2667fbc5e7</id>
+      <masked>false</masked>
+      <name>screeningStatus</name>
+   </variable>
+</TestCaseEntity>

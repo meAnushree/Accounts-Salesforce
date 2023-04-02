@@ -18,40 +18,40 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Click on currency option'
-    WebUI.click(findTestObject('SFDC/CurrencyOption'),FailureHandling.OPTIONAL)
+    WebUI.click(findTestObject('SFDC/EditPage/CurrencyOption'),FailureHandling.OPTIONAL)
 
 
  'Text added in customer name'
-	WebUI.setText(findTestObject('SFDC/CustomerName'), customerName,FailureHandling.OPTIONAL)
+	WebUI.setText(findTestObject('SFDC/EditPage/CustomerName'), customerName,FailureHandling.OPTIONAL)
 
 
  'Text added in sales organisation'
-	WebUI.setText(findTestObject('SFDC/SalesOrganization'), salesOrganization,FailureHandling.OPTIONAL)
+	WebUI.setText(findTestObject('SFDC/Profiles/SalesOrganization'), salesOrganization,FailureHandling.OPTIONAL)
 
 
  'Text added in delivering plant'
 
-	WebUI.setText(findTestObject('SFDC/DeliveringPlant'), deliveringPlant,FailureHandling.OPTIONAL)
+	WebUI.setText(findTestObject('SFDC/EditPage/DeliveringPlant'), deliveringPlant,FailureHandling.OPTIONAL)
 
 	'Text added in language code'
-	WebUI.setText(findTestObject('SFDC/LanguageCode'), languageCode,FailureHandling.OPTIONAL)
+	WebUI.setText(findTestObject('SFDC/EditPage/LanguageCode'), languageCode,FailureHandling.OPTIONAL)
 
 	'Text added in search term'
-	WebUI.setText(findTestObject('SFDC/SearchTerm'), searchTerm,FailureHandling.OPTIONAL)
+	WebUI.setText(findTestObject('SFDC/EditPage/SearchTerm'), searchTerm,FailureHandling.OPTIONAL)
 
 
  'Change company code value'
-	WebUI.click(findTestObject('SFDC/CompanyCodeLookup'),FailureHandling.OPTIONAL)
+	WebUI.click(findTestObject('SFDC/EditPage/CompanyCodeLookup'),FailureHandling.OPTIONAL)
 	int window = WebUI.getWindowIndex()
-	WebUI.switchToWindowIndex(window +1)
+	WebUI.switchToWindowIndex(window + 1)
 	WebUI.setText(findTestObject('SFDC/lookup'), companyCode)
-	WebUI.click(findTestObject('SFDC/GoButton'))
-	WebUI.click(findTestObject('SFDC/LookupResult'))
-	WebUI.switchToWindowIndex(window - 1)
+	WebUI.click(findTestObject('SFDC/Navigation/GoButton'))
+	WebUI.click(findTestObject('SFDC/AccountPage/LookupResult'))
+	WebUI.switchToWindowIndex(window)
 
 
 'Clicking on cancel button'
-WebUI.click(findTestObject('SFDC/CancelButton'))
+WebUI.click(findTestObject('SFDC/AccountPage/CancelButton'))
 
 
 

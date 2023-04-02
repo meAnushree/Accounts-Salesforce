@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "AF0BAE1286F3A2B700D6B8906CF6D9B6",
+  "keywordClasses": [
+    {
+      "name": "randomStringGenerate.StringGenerate",
+      "keywordMethods": [
+        {
+          "name": "randomString",
+          "parameters": [
+            {
+              "name": "length",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

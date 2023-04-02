@@ -18,92 +18,96 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('SFDC/TC01_HFXLogIn'), [('url') : 'https://cadence.oktapreview.com/', ('username') : 'internalcossupportadmin@cadence.com'
-        , ('password') : 'Cdns1234'], FailureHandling.STOP_ON_FAILURE)
+'This will navigate to profile page'
+WebUI.callTestCase(findTestCase('SFDC/Common/TC_ProfilePageSteps'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('SFDC/Common/TC_Impersonation'), [('profileList') : profileList], FailureHandling.STOP_ON_FAILURE)
+
+'TC1 to TC5 scenarios repeat for two users'
 WebUI.comment('TC01')
 
 'Click on "+" icon'
-WebUI.click(findTestObject('SFDC/AllTab'))
+WebUI.click(findTestObject('SFDC/Navigation/AllTab'))
 
-'Click on accounts tab'
-WebUI.click(findTestObject('SFDC/Accounts'))
+WebUI.click(findTestObject('SFDC/Navigation/Accounts'))
 
-'Click on new button'
-WebUI.click(findTestObject('SFDC/NewButton'))
+WebUI.click(findTestObject('SFDC/Navigation/NewButton'))
 
 'Verifying account name search box is present'
-WebUI.verifyElementPresent(findTestObject('SFDC/AccountsNameSearch'), GlobalVariable.delay)
+WebUI.verifyElementVisible(findTestObject('SFDC/Navigation/AccountsNameSearch'), FailureHandling.STOP_ON_FAILURE)
 
 'Verifying search button in lookup page is present'
-WebUI.verifyElementPresent(findTestObject('SFDC/LookUpSearchButton'), GlobalVariable.delay)
+WebUI.verifyElementVisible(findTestObject('SFDC/Navigation/LookUpSearchButton'), FailureHandling.STOP_ON_FAILURE)
 
-'Get the text under the search box'
-String lookUpMsg = WebUI.getText(findTestObject('SFDC/LookUpMsg'), FailureHandling.STOP_ON_FAILURE)
+'Get value from excel file'
+message = CustomKeywords.'readDataFromDataFile.readData.search'('Data Files/SFDC/AllMessages', 'Look Up', 'Condition')
 
-'Check that text under the text box is matched'
-if (lookUpMsg.equals(accountPageMsg)) {
-    println('True')
-}
+searchBoxMsg = findTestData('SFDC/AllMessages').getValue('Message', message)
 
-WebUI.comment('TC2.1')
+'Verify that Lookup message is visible in account name search page'
+WebUI.verifyElementText(findTestObject('SFDC/ErrorMsg/LookUpMsg'), searchBoxMsg)
+
+WebUI.comment('TC2')
 
 'Single keyword text added in search box'
-WebUI.setText(findTestObject('SFDC/AccountsNameSearch'), searchAcName)
+WebUI.setText(findTestObject('SFDC/Navigation/AccountsNameSearch'), searchAcName)
 
-//'Get the text from input box'
-//String Accname = WebUI.getAttribute(findTestObject('SFDC/AccountsNameSearch'), 'value')
-//
-//'Verify that text is added in search box'
-//WebUI.verifyEqual(Accname, searchAcName)
-'Click on search button'
-WebUI.click(findTestObject('SFDC/LookUpSearchButton'))
+WebUI.click(findTestObject('SFDC/Navigation/LookUpSearchButton'))
 
-def listofResults = WebUI.findWebElements(findTestObject('SFDC/SearchResults'), GlobalVariable.delay)
+WebUI.click(findTestObject('SFDC/AccountPage/ParentAccountLink'))
 
-int length = listofResults.size()
+'Verify that create account open after clicking on Parent account link'
+WebUI.verifyElementVisible(findTestObject('SFDC/AccountPage/CreateAccountPage'), FailureHandling.STOP_ON_FAILURE)
 
-println(length)
+WebUI.click(findTestObject('SFDC/AccountPage/AccountPageCancelbtn'))
+
+WebUI.click(findTestObject('SFDC/Navigation/NewButton'))
 
 WebUI.comment('TC03')
 
 'Multiple keyword text added in search box '
-WebUI.setText(findTestObject('SFDC/AccountsNameSearch'), searchAcName2)
+WebUI.setText(findTestObject('SFDC/Navigation/AccountsNameSearch'), searchAcName2)
 
-//String Accname2 = WebUI.getAttribute(findTestObject('SFDC/AccountsNameSearch'), 'value')
-//
-//WebUI.verifyEqual(Accname2, searchAcName2)
-'Click on search button'
-WebUI.click(findTestObject('SFDC/LookUpSearchButton'))
+WebUI.click(findTestObject('SFDC/Navigation/LookUpSearchButton'))
 
 WebUI.comment('TC04')
 
 'Random text added in search box'
-WebUI.setText(findTestObject('SFDC/AccountsNameSearch'), garbageValue)
+WebUI.setText(findTestObject('SFDC/Navigation/AccountsNameSearch'), garbageValue)
 
-//String GarbageVal = WebUI.getAttribute(findTestObject('SFDC/AccountsNameSearch'), 'value')
-//
-//WebUI.verifyEqual(GarbageVal, garbageValue)
-'Click on search button'
-WebUI.click(findTestObject('SFDC/LookUpSearchButton'))
+WebUI.click(findTestObject('SFDC/Navigation/LookUpSearchButton'))
+
+'Get value from excel file'
+randomValue = CustomKeywords.'readDataFromDataFile.readData.search'('Data Files/SFDC/AllMessages', 'Garbage Value', 'Condition')
+
+noRecordsFound = findTestData('SFDC/AllMessages').getValue('Message', randomValue)
 
 'Verify no records found text visible after searching random text'
-WebUI.verifyElementVisible(findTestObject('SFDC/NoRecFound'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('SFDC/AccountPage/NoRecFound'), noRecordsFound)
 
 WebUI.comment('TC5')
 
 'Multiple keyword ext added in search box '
-WebUI.setText(findTestObject('SFDC/AccountsNameSearch'), searchAcName2)
+WebUI.setText(findTestObject('SFDC/Navigation/AccountsNameSearch'), searchAcName2)
 
-WebUI.click(findTestObject('SFDC/LookUpSearchButton'))
+WebUI.click(findTestObject('SFDC/Navigation/LookUpSearchButton'))
 
 'Verify that after searching, search results along with three messages is visible'
-WebUI.verifyElementVisible(findTestObject('SFDC/SearchResultsMsg'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('SFDC/ErrorMsg/ThreeMsg'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('SFDC/ThreeMsg'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('SFDC/NewParentAccount'))
+WebUI.click(findTestObject('SFDC/AccountPage/NewParentAccount'))
 
 'Verify that after clicking on new parent account, account creation page is open'
-WebUI.verifyElementVisible(findTestObject('SFDC/CreateAccountPage'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('SFDC/AccountPage/CreateAccountPage'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('SFDC/AccountPage/AccountPageCancelbtn'))
+
+WebUI.click(findTestObject('SFDC/Navigation/Dropdown'))
+
+WebUI.click(findTestObject('SFDC/Navigation/LogOut'))
+
+'This will navigate home page from profile page'
+WebUI.callTestCase(findTestCase('SFDC/Common/TC_ProfilePageSteps'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
 

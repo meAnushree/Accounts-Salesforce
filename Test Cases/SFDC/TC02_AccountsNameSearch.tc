@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC01 to TC05</description>
    <name>TC02_AccountsNameSearch</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>9fdb4165-2184-47ed-b6cb-4d7c3a69e90a</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>4c909487-ddaa-465d-8865-ae7f367ec1c3</id>
+      <iterationEntity>
+         <iterationType>RANGE</iterationType>
+         <value>1-2</value>
+      </iterationEntity>
+      <testDataId>Data Files/SFDC/Profiles</testDataId>
+   </testDataLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
@@ -25,9 +34,15 @@
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
-      <type>DATA_COLUMN</type>
+      <type>DEFAULT</type>
       <value></value>
       <variableId>4c702547-ebe2-4baf-a61d-624da1e10f00</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>4c909487-ddaa-465d-8865-ae7f367ec1c3</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Profile</value>
+      <variableId>f319bdba-ea46-4466-b98c-19d0b577c539</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'Search using the Account Name plus partial address(Street, City, Country name) to refine matching results'</defaultValue>
@@ -56,5 +71,12 @@
       <id>4c702547-ebe2-4baf-a61d-624da1e10f00</id>
       <masked>false</masked>
       <name>garbageValue</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f319bdba-ea46-4466-b98c-19d0b577c539</id>
+      <masked>false</masked>
+      <name>profileList</name>
    </variable>
 </TestCaseEntity>

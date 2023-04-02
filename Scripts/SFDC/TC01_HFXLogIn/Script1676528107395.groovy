@@ -10,7 +10,7 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -24,27 +24,18 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(url)
 
-WebUI.setText(findTestObject('SFDC/Username'), username)
+WebUI.setText(findTestObject('SFDC/LogInDetails/Username'), username)
 
-WebUI.setText(findTestObject('SFDC/Password'), password)
+WebUI.setText(findTestObject('SFDC/LogInDetails/Password'), password)
 
-WebUI.click(findTestObject('SFDC/LoginButton'))
+WebUI.click(findTestObject('SFDC/LogInDetails/LoginButton'))
 
-String xpath = ((myDashBoard + '//span[text()=\'') + webSite) + '\']'
+WebUI.click(findTestObject('SFDC/LogInDetails/Environment', [('site_name') : environment]))
 
-//println(xpath)
-//
-TestObject webSite = new TestObject('objectName')
-
-webSite.addProperty('xpath', ConditionType.EQUALS, xpath)
-
-
-'Click on SalesforceHfx tab'
-WebUI.click(webSite)
-	
-	
 int window = WebUI.getWindowIndex()
 
 'Switch to SalesforceHFX tab'
-WebUI.switchToWindowIndex(window = (window + 1))
+WebUI.switchToWindowIndex(window + 1)
+
+WebUI.delay(GlobalVariable.delay)
 

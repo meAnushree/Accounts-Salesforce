@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC46, TC48</description>
+   <name>TC05_ValidateMRMDetails</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4cf59da3-004b-4a8d-a932-3fb5e58ffd28</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3888a2ab-ef64-4a38-bc26-7426a15cc093</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3888a2ab-ef64-4a38-bc26-7426a15cc093</id>
+      <masked>false</masked>
+      <name>blank</name>
+   </variable>
+</TestCaseEntity>
